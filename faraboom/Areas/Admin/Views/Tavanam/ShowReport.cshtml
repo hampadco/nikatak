@@ -1,0 +1,55 @@
+<div class="card shadow">
+    <div class="card-header">
+        <h2 class="mb-0"> نمایش گزارش اعتبار سنجی
+        </h2>
+    </div>
+    <div class="card-body col-md-12 text-center">
+        <p id="S_R" class="d-none">@ViewBag.result</p>
+        <div class="table-responsive">
+            <div class="form-group justify-content-center ">
+                <p style="direction: ltr; display:none ;" id="S_R">@ViewBag.result</p>
+                <table class="table table-hover">
+                    <thead class="bg-primary ">
+                        <tr>
+                            <th>شرح</th>
+                            <th>علت</th>
+                            <th>امتیاز</th>
+                            <th>رتبه</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr>
+                            <th id="description"></th>
+                            <th id="reason_codes"></th>
+                            <th id="rate"></th>
+                            <th id="rank"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="~/Admin/Tavanam/Index" class="btn btn-success mt-1 mb-1" style="width: min-content;">
+                بازگشت
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    debugger
+
+    var str = document.getElementById('S_R').innerText.replace("{", "").replace(' \" ', '').replace("}", "").split('"').join('');
+    var res = str.split(",");
+
+    var reason_codes = res[1].split(":");
+    document.getElementById('reason_codes').innerText = "" + reason_codes[1];
+
+    var rate = res[2].split(":");
+    document.getElementById('rate').innerText = "" + rate[1];
+
+    var rank = res[3].split(":");
+    document.getElementById('rank').innerText = "" + rank[1];
+
+    var description = res[4].split(":");
+    document.getElementById('description').innerText = "" + description[1];
+
+</script>
