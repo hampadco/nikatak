@@ -400,3 +400,15 @@ d:\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.
 d:\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.dll
 d:\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.pdb
 d:\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.genruntimeconfig.cache
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.deps.json
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.runtimeconfig.json
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.runtimeconfig.dev.json
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.dll
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.pdb
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csprojAssemblyReference.cache
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfoInputs.cache
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfo.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.cache
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.dll
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.pdb
+c:\Users\ms\Desktop\nikatak_git\Nikatak\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.genruntimeconfig.cache
