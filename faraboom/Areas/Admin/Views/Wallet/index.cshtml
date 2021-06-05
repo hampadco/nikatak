@@ -22,69 +22,68 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<section id="data-list-view" class="data-list-view-header">
 			<div class="table-responsive">
-				<div class="form-group justify-content-center ">
-					<table class="table table-hover">
-						<thead class="bg-primary">
-							<tr>
-								<th> ردیف: </th>
-								<th> مبلغ پرداخت: </th>
-								<th> مبلغ برداشت :</th>
-								<th> تاریخ :</th>
-								<th> وضعیت :</th>
-								<th> جزئیات : </th>
-							</tr>
-						</thead>
-						<tbody class="bg-white">
-							@if (ViewBag.list2 != null)
+				<table class="table data-list-view">
+					<thead class="bg-primary">
+						<tr>
+							<th> ردیف: </th>
+							<th> مبلغ پرداخت: </th>
+							<th> مبلغ برداشت :</th>
+							<th> تاریخ :</th>
+							<th> وضعیت :</th>
+							<th> جزئیات : </th>
+						</tr>
+					</thead>
+					<tbody class="bg-white">
+						@if (ViewBag.list2 != null)
+						{
+							int i = 1;
+							@foreach (var item in ViewBag.list2)
 							{
-								int i = 1;
-								@foreach (var item in ViewBag.list2)
-								{
-			   <tr>
-				<td>@i</td>
-				<td>@item.Pay</td>
-				<td>@item.Harvest</td>
-				<td>@item.DateTime</td>
-										@if (@item.RequestId == 0)
-										{
-					<td>واریز مستقیم</td>
-										}
-										else
-										{
-					<td> استعلام . پرداخت </td>
-										}
-				<th><a class="btn btn-outline-danger btn-sm"
-										href="~/Admin/Wallet/Detail/@item.RequestId" role="button">جزئیات</a></th>
-			   </tr>
-									i++;
-								}
+								<tr>
+									<td>@i</td>
+									<td>@item.Pay</td>
+									<td>@item.Harvest</td>
+									<td>@item.DateTime</td>
+									@if (@item.RequestId == 0)
+									{
+										<td>واریز مستقیم</td>
+									}
+									else
+									{
+										<td> استعلام . پرداخت </td>
+									}
+									<th><a class="btn btn-outline-danger btn-sm" href="~/Admin/Wallet/Detail/@item.RequestId"
+									role="button">جزئیات</a>
+									</th>
+								</tr>
+								i++;
 							}
-	  </tbody>
-	 </table>
+						}
+					</tbody>
+				</table>
+			</div>
+		</section>
 	</div>
-   </div>
-  </div>
- </div>
 </div>
+
 <script>
- document.getElementById("pay").innerText = document.getElementById("pay").innerText.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("pay").innerText = document.getElementById("pay").innerText.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 </script>
 <script>
- function sendpay() {
+	function sendpay() {
 
- var a=parseInt(document.getElementById('pay25').value);
-	   if ( a < 2000000 ) 
-	     {
-          alert("مبلغ شارژ کیف پول نمی تواند کمتر از 2  میلیون تومان باشد");
-         }
+		var a = parseInt(document.getElementById('pay25').value);
+		if (a < 2000000) {
+			alert("مبلغ شارژ کیف پول نمی تواند کمتر از 2  میلیون تومان باشد");
+		}
 
-	
 
-  else if (document.getElementById('pay25').value != "") {
-   window.location.href = "/Admin/pay/index/" + document.getElementById('pay25').value;
-  }
 
- }
+		else if (document.getElementById('pay25').value != "") {
+			window.location.href = "/Admin/pay/index/" + document.getElementById('pay25').value;
+		}
+
+	}
 </script>
