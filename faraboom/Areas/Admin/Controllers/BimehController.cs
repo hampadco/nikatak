@@ -20,5 +20,41 @@ namespace Admin.Controllers {
 
             return View ();
         }
+        public IActionResult sales () {
+
+            return View ();
+        }
+        public IActionResult Badaneh () {
+
+            return View ();
+        }
+        public IActionResult Motor () {
+
+            return View ();
+        }
+        public IActionResult Zelzeleh () {
+
+            return View ();
+        }
+        public IActionResult AtashSoozi () {
+
+            return View ();
+        }
+        public IActionResult Mosaferati () {
+
+            return View ();
+        }
+        public IActionResult Pezeshki () {
+
+            return View ();
+        }
+        public IActionResult Darmani () {
+
+            return View ();
+        }
+        public IActionResult Omr () {
+
+            return View ();
+        }
     }
 }

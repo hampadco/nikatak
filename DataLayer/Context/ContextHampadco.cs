@@ -28,6 +28,7 @@ using DataLayer.AdminEntities.wallet;
 using DataLayer.AdminEntities.Contact;
 using DataLayer.AdminEntities.Request;
 using DataLayer.AdminEntities.Hesab;
+using DataLayer.AdminEntities.Membership;
 
 namespace DataLayer.Context
 {
@@ -66,6 +67,7 @@ namespace DataLayer.Context
         public DbSet<Tbl_Contact> Tbl_Contacts { get; set; } 
         public DbSet<Tbl_Request> Tbl_Requests { get; set; } 
         public DbSet<Tbl_Hesab> Tbl_Hesabs { get; set; } 
+        public DbSet<Tbl_Membership> Tbl_Memberships { get; set; } 
     }
     public class ToDoContextFactory : IDesignTimeDbContextFactory<ContextHampadco>
     {

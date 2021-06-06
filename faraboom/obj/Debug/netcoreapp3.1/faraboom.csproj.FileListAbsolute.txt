@@ -18737,3 +18737,13 @@ c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\staticw
 c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\faraboom.dll
 c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\faraboom.pdb
 c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\faraboom.genruntimeconfig.cache
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\sales.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\Badaneh.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\Motor.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\AtashSoozi.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\Zelzeleh.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\Mosaferati.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\Pezeshki.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\Darmani.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Bimeh\Omr.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Views\LoginNew\Membership.cshtml.g.cs

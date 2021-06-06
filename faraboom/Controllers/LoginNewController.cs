@@ -23,6 +23,8 @@ using MimeKit;
 using ViewModels.AdminViewModel.User;
 using DataLayer.AdminEntities.Admin;
 using ViewModels.AdminViewModel.Admin;
+using ViewModels.AdminViewModel.Membership;
+using DataLayer.AdminEntities.Membership;
 
 namespace faraboom.Controllers {
         public class LoginNewController : Controller {
@@ -37,6 +39,24 @@ namespace faraboom.Controllers {
             }
 
             public IActionResult Index () {
+
+                return View ();
+            }
+
+            public IActionResult Membership (Vm_Membership vm) 
+            {
+                Tbl_Membership tm = new Tbl_Membership
+                {
+                    Name = vm.Name ,
+                    Family = vm.Family ,
+                    NationalCode = vm.NationalCode ,
+                    Phone = vm.Phone ,
+                    Code = vm.Code ,
+                    State = vm.State ,
+                    City = vm.City ,
+                };
+                db.Tbl_Memberships.Add(tm);
+                db.SaveChanges();
 
                 return View ();
             }
