@@ -18,8 +18,8 @@ namespace ViewModels.AdminViewModel.Message {
         public string Language { get; set; }
         public IFormFile emailAttach { get; set; }
         public string pathfile { get; set; }
-          public IFormFile file { get; set; }
-          public string namesender { get; set; }
+        public IFormFile file { get; set; }
+        public string namesender { get; set; }
         
 
     }

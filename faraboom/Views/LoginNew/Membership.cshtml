@@ -41,10 +41,10 @@
                         <div class="col-lg-5 col-sm-12">
                             <div class="login-inner-form">
                                 <div class="details">
-                                    @if (ViewBag.msg != null)
+                                    @* @if ( ViewBag.msg != null)
                                     {
-                                        <p class="alert alert-success text-center">@ViewBag.msg</p>
-                                    }
+                                        <p class="alert alert-success text-center">عضویت شما با موفقیت ثبت شد</p>
+                                    } *@
                                     <p><span>برای عضویت فرم زیر را</span> تکمیل کنید.</p>
                                     <div class="form-group">
                                         <input type="text" asp-for="Name" class="input-text" placeholder="نام "
@@ -185,8 +185,6 @@
 
     <script>
         function Func(Shahrestanha) {
-
-
             //////ostan
             var vSkill = document.getElementById('ostan');
 
@@ -206,51 +204,8 @@
                 }
             }
         }
-
-
     </script>
     <!-- Custom JS Script -->
-
-
-    <script type="text/javascript">
-        $(window).load(function () {
-            // Animate loader off screen
-            $(".loader").fadeOut("slow");;
-        });
-    </script>
-
 </body>
 
 </html>
-
-
-
-<script type="text/javascript">
-    function d() {
-        var sta = "2021/01/15 00:00:00 ";
-        var currentTime = new Date();
-        var startDate = new Date(sta)
-
-        var dif = startDate - currentTime;
-        var s = 1000;
-        var m = 1000 * 60;
-        var h = 1000 * 60 * 60;
-        var d = 1000 * 60 * 60 * 24;
-
-        var days = Math.floor(dif / d);
-        dif -= days * d;
-        if (dif <= 0) dif = 0;
-
-        var hours = Math.floor(dif / h);
-        dif -= hours * h;
-        if (dif <= 0) dif = 0;
-
-        var minutes = Math.floor(dif / m);
-        dif -= minutes * m;
-        if (dif <= 0) dif = 0;
-
-        var seconds = Math.floor(dif / s);
-        document.getElementById('d').innerHTML = "    مانده روز:&nbsp;&nbsp;" + days + "&nbsp;&nbsp;  مانده  ساعت:&nbsp;&nbsp;" + hours + "  &nbsp;&nbsp; مانده دقیقه:&nbsp;&nbsp;" + minutes + "  &nbsp;&nbsp;  مانده ثانیه:&nbsp;&nbsp;" + seconds;
-    }
-    setInterval("d()", 1000);
-</script>

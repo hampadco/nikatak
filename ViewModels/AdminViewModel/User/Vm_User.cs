@@ -13,18 +13,18 @@ namespace ViewModels.AdminViewModel.User {
         public string EmailUS { get; set; }
         public string PhoneUs { get; set; }
         public string PasswordUs { get; set; }
-         public string RePasswordUs { get; set; }
+        public string RePasswordUs { get; set; }
         public string AddressUs { get; set; }
         public string ProfileImageUs { get; set; }
         public string Language { get; set; }
         public string NameFamily { get; set; }
         public string CodeMeli { get; set; }
         public IFormFile NameFile { get; set; }
-         public IFormFile img { get; set; }
+        public IFormFile img { get; set; }
         public bool state { get; set; }
         public string Captcha { get; set; }
-         public string pay { get; set; }
-         public string n { get; set; }
-         public string f { get; set; }
+        public string pay { get; set; }
+        public string n { get; set; }
+        public string f { get; set; }
     }
 }

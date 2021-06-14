@@ -40,17 +40,17 @@ namespace faraboom.Areas.Adminsite.Controllers
                     }
                     Vm_User ff = new Vm_User()
                     {
-                      Id = item.Id,
-                      UserNameUs = item.UserNameUs,
-                      EmailUS = item.EmailUS,
-                      PhoneUs = item.PhoneUs,
-                      PasswordUs = item.PasswordUs,
-                      AddressUs = item.AddressUs,
-                      NameFamily = item.NameFamily,
-                      CodeMeli = item.CodeMeli,
-                      state = item.state,
-                      pay = d,
-                      ProfileImageUs = item.ProfileImageUs,
+                        Id = item.Id,
+                        UserNameUs = item.UserNameUs,
+                        EmailUS = item.EmailUS,
+                        PhoneUs = item.PhoneUs,
+                        PasswordUs = item.PasswordUs,
+                        AddressUs = item.AddressUs,
+                        NameFamily = item.NameFamily,
+                        CodeMeli = item.CodeMeli,
+                        state = item.state,
+                        pay = d,
+                        ProfileImageUs = item.ProfileImageUs,
                     };
                     us.Add(ff);
 
@@ -71,28 +71,45 @@ namespace faraboom.Areas.Adminsite.Controllers
             return RedirectToAction("index");
         }
 
-         public IActionResult confirm(int id)
+        public IActionResult confirm(int id)
         {
             var selectdel = db.Tbl_User.Where(a => a.Id == id).SingleOrDefault();
-            selectdel.state=true;
+            selectdel.state = true;
             db.Tbl_User.Update(selectdel);
             db.SaveChanges();
             err = "تایید با موفقیت انجام شد";
             return RedirectToAction("index");
         }
 
-         public IActionResult confirm2(int id)
+        public IActionResult confirm2(int id)
         {
             var selectdel = db.Tbl_User.Where(a => a.Id == id).SingleOrDefault();
-            selectdel.state=false;
+            selectdel.state = false;
             db.Tbl_User.Update(selectdel);
             db.SaveChanges();
             err = " عدم تایید با موفقیت انجام شد ";
             return RedirectToAction("index");
         }
-        
 
 
+        public IActionResult Membership()
+        { 
+        if (err != null)
+            {
+                ViewBag.er = err;
+                err = null;
+            }
+            ViewBag.Membership = db.Tbl_Memberships.ToList();
+            return View();
+        }
+        public IActionResult del2(int id)
+        {
+            var del = db.Tbl_Memberships.Where(a => a.Id == id).SingleOrDefault();
+            db.Tbl_Memberships.Remove(del);
+            db.SaveChanges();
+            err = "حذف با موفقیت انجام شد";
+            return RedirectToAction("Membership");
+        }
 
     }
 }

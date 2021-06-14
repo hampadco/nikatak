@@ -72,8 +72,8 @@ namespace faraboom.Areas.Admin.Controllers
         public async Task<IActionResult> add_msg(Vm_Message msg)
         {
              ///////////////////////////////////////////////////////////////////////////////////////////////////////////count msg
-             ViewBag.resiver=db.Tbl_Message.Where(a=>a.StateMess==false && a.SenderMess=="admin").Count();
-              ViewBag.sender=db.Tbl_Message.Where(a=>a.StateMess==false && a.SenderMess==User.Identity.GetId()).Count();
+            ViewBag.resiver=db.Tbl_Message.Where(a=>a.StateMess==false && a.SenderMess=="admin").Count();
+            ViewBag.sender=db.Tbl_Message.Where(a=>a.StateMess==false && a.SenderMess==User.Identity.GetId()).Count();
 
 
 

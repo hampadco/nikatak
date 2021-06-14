@@ -179,6 +179,43 @@ namespace Admin.Controllers
             Diposit();
             return View();
         }
+        public IActionResult PardakhtTe(Vm_Gabz vg)
+        {
+            Tbl_Request tb = new Tbl_Request
+            {
+                UserName = User.Identity.GetId(),
+                Type_Request = "پرداخت",
+                Bill_Id = vg.bill_id,
+                Pay_Id = vg.pay_id,
+                Amount = 75,
+                Titel_Request = vg.Titel,
+                Date_Request = DateTime.UtcNow,
+            };
+            db.Tbl_Requests.Add(tb);
+            db.SaveChanges();
+            var qfinal = db.Tbl_Requests.Where(a => a.UserName == User.Identity.GetId()).OrderByDescending(a => a.Id).Take(1).SingleOrDefault();
+            proccess(75, qfinal.Id);
+            /// pay Fish
+            Tbl_Request tb1 = new Tbl_Request
+            {
+                UserName = User.Identity.GetId(),
+                Type_Request = " پرداخت قبض " + " " + vg.Titel,
+                Bill_Id = vg.bill_id2,
+                Pay_Id = vg.pay_id2,
+                Amount = vg.amount,
+                Titel_Request = vg.Titel,
+                Date_Request = DateTime.UtcNow,
+            };
+            db.Tbl_Requests.Add(tb1);
+            db.SaveChanges();
+            var qfinal1 = db.Tbl_Requests.Where(a => a.UserName == User.Identity.GetId()).OrderByDescending(a => a.Id).Take(1).SingleOrDefault();
+            proccess(vg.amount, qfinal1.Id);
+            Diposit();
+            Random rand = new Random ();
+            int ran = rand.Next(100000000 , 999999999);
+            ViewBag.ra = ran ;
+            return View();
+        }
         public async Task<IActionResult> Pardakht1(string bill_id2, string pay_id2, string amount)
         {
             var amount1 = Convert.ToInt32(amount);

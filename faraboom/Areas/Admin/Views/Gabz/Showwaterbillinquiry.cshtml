@@ -4,7 +4,8 @@
 		<h2 class="mb-0"> نمایش استعلام قبض آب</h2>
 	</div>
 	<div class="card-body">
-		<form method="POST" action="/Admin/Gabz/Pardakht">
+		@* <form method="POST" action="/Admin/Gabz/Pardakht"> *@
+		<form method="POST" action="/Admin/Gabz/PardakhtTe">
 			<div class="row">
 				<div class="table-responsive">
 					<div class="form-group justify-content-center ">
@@ -72,11 +73,11 @@
 	</div>
    </div>
    <div class="d-flex justify-content-end ">
-	 <button type="submit" class="btn btn-success  mt-1 mb-1" style="width: min-content;"> پرداخت
-	</button>
-	@*<a href="~/Admin/Gabz/PardakhtError" class="btn btn-success mt-1 mb-1" style="width: min-content;">
+	 @* <button type="submit" class="btn btn-success  mt-1 mb-1" style="width: min-content;"> پرداخت
+	</button> *@
+	<a href="~/Admin/Gabz_Charge/pardakht" class="btn btn-success mt-1 mb-1" style="width: min-content;">
 	 پرداخت
-	</a>*@
+	</a>
 	<a onclick="print();" class="btn btn-success  mt-1 mb-1" style="width: min-content;"> چاپ
 	</a>
 	<a href="~/Admin/Gabz_Charge/Estelam" class="btn btn-success mt-1 mb-1" style="width: min-content;">

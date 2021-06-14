@@ -47,6 +47,9 @@ namespace Admin.Controllers
         {
             return View();
         }
-
+        public IActionResult pardakht()
+        {
+            return View();
+        }
     }
 }

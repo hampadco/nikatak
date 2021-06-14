@@ -226,6 +226,8 @@ namespace faraboom.Controllers
                     }
 
                 }
+                //---------------------------------------------------------------------------------------\\
+                //----------------------------------------------------------------------------------------\\
                 else
                 {
                     var user = db.Tbl_User.Where(a => a.UserNameUs == us.UserNameUs && a.PasswordUs == us.PasswordUs && a.state == true).SingleOrDefault();

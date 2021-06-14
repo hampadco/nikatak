@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using DataLayer.AdminEntities.Address;
 using DataLayer.AdminEntities.Admin;
 using DataLayer.AdminEntities.Agency;
@@ -29,6 +26,7 @@ using DataLayer.AdminEntities.Contact;
 using DataLayer.AdminEntities.Request;
 using DataLayer.AdminEntities.Hesab;
 using DataLayer.AdminEntities.Membership;
+using DataLayer.AdminEntities.Bimeh;
 
 namespace DataLayer.Context
 {
@@ -68,6 +66,7 @@ namespace DataLayer.Context
         public DbSet<Tbl_Request> Tbl_Requests { get; set; } 
         public DbSet<Tbl_Hesab> Tbl_Hesabs { get; set; } 
         public DbSet<Tbl_Membership> Tbl_Memberships { get; set; } 
+        public DbSet<Tbl_Bimeh> Tbl_Bimehs { get; set; } 
     }
     public class ToDoContextFactory : IDesignTimeDbContextFactory<ContextHampadco>
     {

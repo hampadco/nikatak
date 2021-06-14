@@ -1,62 +1,43 @@
-@model ViewModels.AdminViewModel.Gabz.Vm_Gabz;
+@model ViewModels.AdminViewModel.Bimeh.Vm_Bimeh; 
 <div class="card shadow">
     <div class="card-header">
         <h2 class="mb-0"> خدمات بیمه شخص ثالث </h2>
     </div>
     <div class="card-body">
-        <form action="" method="POST">
+        @* <form action="/Bimeh/Sabt" method="POST">
             <div class="row ">
                 <div class="col-12 col-xl-6 col-lg-6">
                     <div class="form-group col-12">
-                        <h2 class="mb-0"> نوع وسیله نقلیه : </h2>
-                        <select type="number" class="form-control mt-1">
-                            <option value=""> </option>
-                            <option value=" سواری"> سواری</option>
-                            <option value=" تاکسی درون شهری"> تاکسی درون شهری</option>
-                            <option value="تاکسی برون شهری">تاکسی برون شهری</option>
-                            <option value="وانت">وانت</option>
-                            <option value="کامیون">کامیون</option>
-                            <option value="کامیونت">کامیونت</option>
-                        </select>
+                        <h2 class="mb-0">آپلود تصویر رو کارت ماشین : </h2>
+                        <input type="file" asp-for="FCartMashin1" class="mt-3" accept="image/x-png,image/jpg" placeholder="آپلود عکس رو کارت ماشین" required>
                     </div>
-                    <div class="form-group col-12">
-                        <h2 class="mb-0"> مدل : </h2>
-                        <input type="text" class="form-control" placeholder="مدل خودرو خود را وارد کنید:">
+                   <div class="form-group col-12">
+                        <h2 class="mb-0">آپلود تصویر رو گواهینامه : </h2>
+                        <input type="file" asp-for="FGhovahiNameh1" class="mt-3" accept="image/x-png,image/jpg" placeholder="آپلود عکس رو گواهینامه" required>
                     </div>
-                    <div class="form-group col-12">
-                        <h2 class="mb-0"> شرکت بیمه قبلی : </h2>
-                        <input type="text" class="form-control" placeholder="نام شرکت بیمه قبلی را وارد کنید:">
+                   <div class="form-group col-12">
+                        <h2 class="mb-0">آپلود تصویر بیمه نامه شخص ثالث فعلی : </h2>
+                        <input type="file" asp-for="FBimehNameh" class="mt-3" accept="image/x-png,image/jpg" placeholder="آپلود عکس بیمه نامه شخص ثالث فعلی " required>
                     </div>
                 </div>
                 <div class="col-12 col-xl-6 col-lg-6">
                     <div class="form-group col-12">
-                        <h2 class="mb-0"> برند : </h2>
-                        <input type="text" class="form-control"
-                            placeholder=" برند خودرو خود را وارد کنید:">
+                        <h2 class="mb-0">آپلود تصویر پشت کارت ماشین : </h2>
+                        <input type="file" asp-for="FCartMashin2" class="mt-3" accept="image/x-png,image/jpg" placeholder="آپلود عکس پشت کارت ماشین" required>
                     </div>
                     <div class="form-group col-12">
-                        <h2 class="mb-0"> سال ساخت : </h2>
-                        <input type="text" class="form-control" placeholder="سال ساخت خودرو خود را وارد کنید:">
-                    </div>
-                    <div class="form-group form-check form-check-inline col-12 mt-4">
-                        <h2 class="mb-0">آیا در مدت بیمه نامه قبلی تغییر مالکیت داده اید؟ </h2>
-                        <div class="">
-                            <input class="form-check-input m-1" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">بله
-                       
-                            <input class="form-check-input m-1" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">خیر
-                        </div>
+                        <h2 class="mb-0">آپلود تصویر پشت گواهینامه : </h2>
+                        <input type="file" asp-for="FGhovahiNameh2" class="mt-3" accept="image/x-png,image/jpg" placeholder="آپلود عکس پشت گواهینامه" required>
                     </div>
                 </div>
             </div>
             <div class="">
-                <button type="submit" class="btn btn-success  mt-1 mb-1" style="width: min-content;"> استعلام
+                <button type="submit" class="btn btn-success  mt-1 mb-1" style="width: min-content;"> ثبت
                 </button>
                 <a href="~/Admin/Bimeh/index" class="btn btn-success mt-1 mb-1" style="width: min-content;">
                     بازگشت
                 </a>
             </div>
-        </form>
+        </form> *@
     </div>
 </div>
