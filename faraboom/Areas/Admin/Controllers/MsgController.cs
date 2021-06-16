@@ -110,7 +110,8 @@ namespace faraboom.Areas.Admin.Controllers
                 eror="تم ارسال الرسالة بنجاح";
                 //////////////////////////end upload file 
 
-            }else
+            }
+            else
             {
                 Tb_Message message=new Tb_Message()
                 {
