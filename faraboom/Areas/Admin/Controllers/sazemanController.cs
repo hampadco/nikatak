@@ -14,6 +14,11 @@ namespace Admin.Controllers {
         }
 
 
+        public IActionResult index () {
+
+            return View ();
+        }
+
         // ******************************************چک 
         public IActionResult check () {
 

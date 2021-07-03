@@ -113,6 +113,10 @@
               "target": "Package",
               "version": "[1.0.0.2, )"
             },
+            "KavenegarDotNetCore": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "MailKit": {
               "target": "Package",
               "version": "[2.10.0, )"

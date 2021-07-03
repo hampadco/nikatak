@@ -72,6 +72,18 @@ namespace Admin.Controllers {
 
             return View ();
         }
+
+
+        public IActionResult bsales () {
+
+            return View ();
+        }
+
+        public IActionResult bbadane () {
+
+            return View ();
+        }
+
         // public async Task<IActionResult> Sabt (Vm_Bimeh vb)
         // {
         //      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////upload file

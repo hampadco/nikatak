@@ -18,6 +18,18 @@
           "lib/net40/HttpClient.Abstractions.dll": {}
         }
       },
+      "KavenegarDotNetCore/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Kavenegar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Kavenegar.Core.dll": {}
+        }
+      },
       "MailKit/2.10.0": {
         "type": "package",
         "dependencies": {
@@ -2550,6 +2562,24 @@
         "httpclient.abstractions.1.0.0.2.nupkg.sha512",
         "httpclient.abstractions.nuspec",
         "lib/net40/HttpClient.Abstractions.dll"
+      ]
+    },
+    "KavenegarDotNetCore/1.0.3": {
+      "sha512": "y8FdW8QOM1gRr3iQgcQPU6pm0BM1VY3YM+FnbIIPKiFWTBYyHXAi/FPxkHQJXrjt2YLt6xLkwUFHGE2jIeZgaA==",
+      "type": "package",
+      "path": "kavenegardotnetcore/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "3264702.png",
+        "kavenegardotnetcore.1.0.3.nupkg.sha512",
+        "kavenegardotnetcore.nuspec",
+        "lib/netstandard1.2/Kavenegar.Core.dll",
+        "lib/netstandard1.3/Kavenegar.Core.dll",
+        "lib/netstandard1.4/Kavenegar.Core.dll",
+        "lib/netstandard1.5/Kavenegar.Core.dll",
+        "lib/netstandard1.6/Kavenegar.Core.dll",
+        "lib/netstandard2.0/Kavenegar.Core.dll"
       ]
     },
     "MailKit/2.10.0": {
@@ -8466,6 +8496,7 @@
     ".NETCoreApp,Version=v3.1": [
       "DataLayer >= 1.0.0",
       "HttpClient.Abstractions >= 1.0.0.2",
+      "KavenegarDotNetCore >= 1.0.3",
       "MailKit >= 2.10.0",
       "Microsoft.AspNet.WebApi.Client >= 5.2.7",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.8",
@@ -8524,6 +8555,10 @@
           "HttpClient.Abstractions": {
             "target": "Package",
             "version": "[1.0.0.2, )"
+          },
+          "KavenegarDotNetCore": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "MailKit": {
             "target": "Package",

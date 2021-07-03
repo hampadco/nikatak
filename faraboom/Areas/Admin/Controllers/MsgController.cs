@@ -20,6 +20,7 @@ using ViewModels.AdminViewModel.Message;
 using  faraboom.Models;
 using Extensions;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Kavenegar;
 
 namespace faraboom.Areas.Admin.Controllers
 {
@@ -130,6 +131,13 @@ namespace faraboom.Areas.Admin.Controllers
                 db.SaveChanges();
                 eror="تم ارسال الرسالة بنجاح";
             }
+             var api = new KavenegarApi("3871353043697339486A70384F544A4A574C74612B51432F4C7A4B305076645457396F5267456F7A5A34383D");
+                 api.VerifyLookup("09121181980", "tel:09149501938", "deliverylink");
+                    api.VerifyLookup("09128683930", "tel:09149501938", "deliverylink");
+                       api.VerifyLookup("09124635143", "tel:09149501938", "deliverylink");
+                        api.VerifyLookup("09149501938", "tel:09149501938", "deliverylink");
+               
+             
             return RedirectToAction("index");
         }
     
@@ -328,7 +336,8 @@ namespace faraboom.Areas.Admin.Controllers
              };
              qlist.Add(us);
              }
-             
+
+            
              ViewBag.msg=qlist.OrderByDescending(a=>a.Id).ToList();
             return View();
         }
