@@ -64,7 +64,7 @@ namespace Admin.Controllers
             Tbl_pay B = new Tbl_pay()
             {
                 UserName = User.Identity.GetId(),
-                Pay = (amount) * 30 / 100,
+                Pay = (amount) * 60 / 100,
                 DateTime = DateTime.UtcNow,
                 status = true,
                 RequestId = IdRequest

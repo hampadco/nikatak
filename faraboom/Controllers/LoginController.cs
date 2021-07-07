@@ -191,13 +191,12 @@ namespace faraboom.Controllers
 
         public IActionResult login_check(Vm_User us)
         {
-
             if (Captcha.ValidateCaptchaCode(us.Captcha, HttpContext))
             {
+
                 if (us.UserNameUs == "Admin")
                 {
                     var user = db.Tbl_User.Where(a => a.UserNameUs == "Admin" && a.PasswordUs == "nikatak5250").SingleOrDefault();
-
                     if (user != null)
                     {
 
@@ -226,12 +225,39 @@ namespace faraboom.Controllers
                     }
 
                 }
-                //---------------------------------------------------------------------------------------\\
-                //----------------------------------------------------------------------------------------\\
+                // else if (us.UserNameUs == "bimekosar")
+                // {
+                //     var user = db.Tbl_User.Where(a => a.UserNameUs == "bimekosar" && a.PasswordUs == "bime5250").SingleOrDefault();
+                //     if (user != null)
+                //     {
+
+                //         var claims = new List<Claim>() {
+                //             new Claim (ClaimTypes.NameIdentifier, user.UserNameUs.ToString ()),
+                //             new Claim (ClaimTypes.Name, "مجیدی")
+                //             };
+
+                //         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                //         var principal = new ClaimsPrincipal(identity);
+
+                //         var properties = new AuthenticationProperties
+                //         {
+                //             IsPersistent = true
+                //         };
+
+                //         HttpContext.SignInAsync(principal, properties);
+                //         return RedirectToAction("index", "Home", new { area = "adminsite" });
+
+                //     }
+                //     else
+                //     {
+                //         eror = "نام کاربری یا رمز عبور شما نادرست است";
+                //         return RedirectToAction("Login");
+                //     }
+                // }
                 else
                 {
                     var user = db.Tbl_User.Where(a => a.UserNameUs == us.UserNameUs && a.PasswordUs == us.PasswordUs && a.state == true).SingleOrDefault();
-
                     if (user != null)
                     {
 
@@ -257,18 +283,15 @@ namespace faraboom.Controllers
                         int harvest = db.Tbl_pays.Where(a => a.UserName == User.Identity.GetId()).Sum(a => a.Harvest);
                         HttpContext.Session.SetInt32("sum", (pay - harvest));
 
-                      
-
                         //////////////////////////////////
                         return RedirectToAction("index", "menu", new { area = "admin" });
 
                     }
-                    else if(db.Tbl_User.Any(a =>  a.state == false) )
+                    else if (db.Tbl_User.Any(a => a.state == false))
                     {
                         eror = "حساب کاربری شما غیرفعال است.";
                         return RedirectToAction("Login");
                     }
-
                     else
                     {
                         eror = "نام کاربری یا رمز عبور شما نادرست است";
@@ -314,6 +337,6 @@ namespace faraboom.Controllers
 
         }
 
-        
+
     }
 }

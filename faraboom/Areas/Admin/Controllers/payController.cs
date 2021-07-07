@@ -45,7 +45,7 @@ namespace Admin.Controllers
         }
         //////////////////////////////////////////////////////////////////فرایند خرید
         public async Task<IActionResult> Request()
-        {      
+        {
             var quser = db.Tbl_User.Where(a => a.UserNameUs == (User.Identity.GetId())).SingleOrDefault();
             var qpay = db.Tbl_pays.Where(a => a.UserName == User.Identity.GetId()).OrderByDescending(a => a.Id).Take(1).SingleOrDefault();
             sumshop = qpay.Pay;
@@ -69,7 +69,7 @@ namespace Admin.Controllers
             var verification = await _payment.Verification(new DtoVerification
             {
                 Amount = sumshop,
-                 MerchantId = "ab99ecd5-bc8a-402f-8ead-b8dca3ed0e35",
+                MerchantId = "ab99ecd5-bc8a-402f-8ead-b8dca3ed0e35",
                 Authority = authority
             }, Payment.Mode.zarinpal);
 

@@ -34,7 +34,6 @@ namespace faraboom {
             services.AddMvc ().AddRazorRuntimeCompilation ();
             services.AddDbContext<ContextHampadco> (option => {
             option.UseSqlServer (Configuration.GetConnectionString ("DefaultConnection"));
-
             });
             /////////////auto
             services.AddAuthentication (options => {
@@ -95,7 +94,7 @@ namespace faraboom {
                     areaName:"Admin",
                     pattern: "Admin/{controller=Menu}/{action=Index}/{id?}");
 
-                     endpoints.MapAreaControllerRoute (
+                endpoints.MapAreaControllerRoute (
                     name: "Areas",
                     areaName:"Adminsite",
                     pattern: "Adminsite/{controller=Home}/{action=Index}/{id?}");

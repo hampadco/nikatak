@@ -72,16 +72,17 @@
 	document.getElementById("pay").innerText = document.getElementById("pay").innerText.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 </script>
 <script>
-	function sendpay() {
+	function sendpay()
+	{
 
 		var a = parseInt(document.getElementById('pay25').value);
-		if (a < 2000000) {
+		if (a < 2000000)
+		{
 			alert("مبلغ شارژ کیف پول نمی تواند کمتر از 2  میلیون تومان باشد");
 		}
 
-
-
-		else if (document.getElementById('pay25').value != "") {
+		else if (document.getElementById('pay25').value != "")
+		{
 			window.location.href = "/Admin/pay/index/" + document.getElementById('pay25').value;
 		}
 

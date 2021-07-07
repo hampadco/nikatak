@@ -18861,3 +18861,5 @@ c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\A
 c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Layout4.cshtml.g.cs
 c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_MenuPartial3.cshtml.g.cs
 c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_MenuPartial4.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\sazeman\charge.cshtml.g.cs
+c:\Users\ms\Desktop\nikatak_git\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\sazeman\bargekur.cshtml.g.cs

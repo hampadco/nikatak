@@ -18,6 +18,10 @@ namespace Admin.Controllers {
 
             return View ();
         }
+        public IActionResult charge () {
+
+            return View ();
+        }
 
         // ******************************************چک 
         public IActionResult check () {
@@ -580,6 +584,10 @@ namespace Admin.Controllers {
             return View ();
         }
 
+        public IActionResult bargekur () {
+
+            return View ();
+        }
 
     }
 }
