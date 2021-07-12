@@ -1,5 +1,7 @@
 using System;
 using System.IO;
+using System.Data;
+using System.Data.Common;
 using System.Threading.Tasks;
 using DataLayer.Context;
 using faraboom.Models;
@@ -167,7 +169,7 @@ namespace faraboom.Controllers
                 Phone = VmReg.Phone,
                 code = VmReg.code,
                 Email = VmReg.Email,
-
+                DateRegister = DateTime.UtcNow,
                 Postalcode = VmReg.Postalcode,
                 Nationalcard = NewFileName,
                 Certificate = NewFileName2,

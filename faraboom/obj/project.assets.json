@@ -8511,19 +8511,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ms\\.nuget\\packages\\": {}
+    "C:\\Users\\MS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ms\\Desktop\\nikatak_git\\Nikatak\\faraboom\\faraboom.csproj",
+      "projectUniqueName": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\faraboom\\faraboom.csproj",
       "projectName": "faraboom",
-      "projectPath": "c:\\Users\\ms\\Desktop\\nikatak_git\\Nikatak\\faraboom\\faraboom.csproj",
-      "packagesPath": "C:\\Users\\ms\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ms\\Desktop\\nikatak_git\\Nikatak\\faraboom\\obj\\",
+      "projectPath": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\faraboom\\faraboom.csproj",
+      "packagesPath": "C:\\Users\\MS\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\faraboom\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ms\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\MS\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8534,11 +8534,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "c:\\Users\\ms\\Desktop\\nikatak_git\\Nikatak\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "c:\\Users\\ms\\Desktop\\nikatak_git\\Nikatak\\DataLayer\\DataLayer.csproj"
+            "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj"
             },
-            "c:\\Users\\ms\\Desktop\\nikatak_git\\Nikatak\\ViewModels\\ViewModels.csproj": {
-              "projectPath": "c:\\Users\\ms\\Desktop\\nikatak_git\\Nikatak\\ViewModels\\ViewModels.csproj"
+            "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\ViewModels\\ViewModels.csproj"
             }
           }
         }
@@ -8619,7 +8619,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   },

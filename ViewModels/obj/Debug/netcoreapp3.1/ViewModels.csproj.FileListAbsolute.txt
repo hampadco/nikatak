@@ -413,3 +413,15 @@ c:\Users\ms\Desktop\nikatak_git\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewM
 c:\Users\ms\Desktop\nikatak_git\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csproj.CopyComplete
 c:\Users\ms\Desktop\nikatak_git\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.dll
 c:\Users\ms\Desktop\nikatak_git\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.pdb
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\bin\Debug\netcoreapp3.1\ViewModels.deps.json
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\bin\Debug\netcoreapp3.1\ViewModels.dll
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\bin\Debug\netcoreapp3.1\ViewModels.pdb
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\bin\Debug\netcoreapp3.1\DataLayer.dll
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\bin\Debug\netcoreapp3.1\DataLayer.pdb
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csprojAssemblyReference.cache
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.AssemblyInfoInputs.cache
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.AssemblyInfo.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csproj.CoreCompileInputs.cache
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.csproj.CopyComplete
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.dll
+c:\Users\MS\Desktop\nika4-15\Nikatak\ViewModels\obj\Debug\netcoreapp3.1\ViewModels.pdb

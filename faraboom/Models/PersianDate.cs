@@ -28,13 +28,22 @@ namespace Extensions
         /// <returns>تاریخ شمسی</returns>
         public static string ToPersianDateString(this DateTime georgianDate)
         {
-            System.Globalization.PersianCalendar persianCalendar = new System.Globalization.PersianCalendar();
+            if (georgianDate > Convert.ToDateTime("0001-01-01 00:00:00.0000000") || georgianDate != null)
+            {
+                /* 2021-03-21 09:00:00.6622088 */
+                System.Globalization.PersianCalendar persianCalendar = new System.Globalization.PersianCalendar();
 
             string year = persianCalendar.GetYear(georgianDate).ToString();
             string month = persianCalendar.GetMonth(georgianDate).ToString().PadLeft(2, '0');
             string day = persianCalendar.GetDayOfMonth(georgianDate).ToString().PadLeft(2, '0');
             string persianDateString = string.Format("{0}/{1}/{2}", year, month, day);
             return persianDateString;
+            }
+            else
+            {
+                return "---------------";
+            }
+            
         }
 
         /// <summary>

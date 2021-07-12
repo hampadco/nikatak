@@ -98,6 +98,9 @@ namespace DataLayer.Migrations
                     b.Property<string>("Companyname")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("DateRegister")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Day")
                         .HasColumnType("nvarchar(max)");
 
@@ -509,6 +512,33 @@ namespace DataLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tbl_Baner");
+                });
+
+            modelBuilder.Entity("DataLayer.AdminEntities.Bimeh.Tbl_Bimeh", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BimehNameh")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CartMashin1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CartMashin2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GhovahiNameh1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GhovahiNameh2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tbl_Bimehs");
                 });
 
             modelBuilder.Entity("DataLayer.AdminEntities.Blog.Tb_Blog", b =>
@@ -1160,6 +1190,33 @@ namespace DataLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tbl_Teaser");
+                });
+
+            modelBuilder.Entity("DataLayer.AdminEntities.TokenValue.Tb_TokenValue", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("LifeTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Refresh")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Scopes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tbl_TokenValues");
                 });
 
             modelBuilder.Entity("DataLayer.AdminEntities.User.Tb_User", b =>

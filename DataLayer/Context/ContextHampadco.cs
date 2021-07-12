@@ -27,6 +27,7 @@ using DataLayer.AdminEntities.Request;
 using DataLayer.AdminEntities.Hesab;
 using DataLayer.AdminEntities.Membership;
 using DataLayer.AdminEntities.Bimeh;
+using DataLayer.AdminEntities.TokenValue;
 
 namespace DataLayer.Context
 {
@@ -67,6 +68,7 @@ namespace DataLayer.Context
         public DbSet<Tbl_Hesab> Tbl_Hesabs { get; set; } 
         public DbSet<Tbl_Membership> Tbl_Memberships { get; set; } 
         public DbSet<Tbl_Bimeh> Tbl_Bimehs { get; set; } 
+        public DbSet<Tb_TokenValue> Tbl_TokenValues { get; set; }
     }
     public class ToDoContextFactory : IDesignTimeDbContextFactory<ContextHampadco>
     {

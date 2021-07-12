@@ -203,7 +203,7 @@ namespace faraboom.Controllers
 
                         var claims = new List<Claim>() {
                             new Claim (ClaimTypes.NameIdentifier, user.UserNameUs.ToString ()),
-                            new Claim (ClaimTypes.Name, "سعید عطایی")
+                            new Claim (ClaimTypes.Name, "Admin")
                             };
 
                         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -237,7 +237,7 @@ namespace faraboom.Controllers
                         };
 
                         HttpContext.SignInAsync(principal, properties);
-                        return RedirectToAction("index", "msgp", new { area = "adminsite" });
+                        return RedirectToAction("index", "msg2", new { area = "adminsite" });
 
                     }
                     else

@@ -1,22 +1,22 @@
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using DataLayer.Context;
-using faraboom.Models;
+using Extensions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using ViewModels.AdminViewModel.User;
+using ViewModels.AdminViewModel.Admin;
 
-namespace faraboom.Areas.Adminsite.Controllers {
+namespace faraboom.Areas.Adminsite.Controllers
+{
 
-    public class UsersNewController : BaseController {
+    public class UsersNewController : BaseController
+    {
 
-        public UsersNewController (ContextHampadco _db, IWebHostEnvironment env) : base (_db, env) { }
-        public IActionResult Index () {
-            if (err != null) {
+        public UsersNewController(ContextHampadco _db, IWebHostEnvironment env) : base(_db, env) { }
+        public IActionResult Index()
+        {
+            if (err != null)
+            {
                 ViewBag.er = err;
                 err = null;
             }
@@ -50,17 +50,43 @@ namespace faraboom.Areas.Adminsite.Controllers {
             // }
 
             // ViewBag.list = us.OrderByDescending (a => a.Id).ToList ();
-            ViewBag.list=db.Tbl_infos.Where(a=>a.Typeactivity=="Request").ToList();
-
-            return View ();
+            List<Vm_info> us = new List<Vm_info>();
+            var dbl = db.Tbl_infos.Where(a => a.Typeactivity == "Request").ToList();
+            if (dbl != null)
+            {
+                foreach (var item in dbl)
+                {
+                    Vm_info ff = new Vm_info()
+                    {
+                        Id = item.Id,
+                        Nameper = item.Nameper,
+                        Familyper = item.Familyper,
+                        NationalCode = item.NationalCode,
+                        code = item.code,
+                        PhoneHome = item.PhoneHome,
+                        Phone = item.Phone,
+                        State = item.State,
+                        City = item.City,
+                        Postalcode = item.Postalcode,
+                        DateRegister = item.DateRegister.ToPersianDateString(),
+                        Nationalcard = item.Nationalcard,
+                        Certificate = item.Certificate,
+                        Degreeeducation = item.Degreeeducation,
+                        Document = item.Document,
+                    };
+                    us.Add (ff);
+                }
+                ViewBag.list = us ;
+            }
+            return View();
         }
-        public IActionResult del (int id) {
-            var selectdel = db.Tbl_infos.Where (a => a.Id == id).SingleOrDefault ();
-            db.Tbl_infos.Remove (selectdel);
-            db.SaveChanges ();
+        public IActionResult del(int id)
+        {
+            var selectdel = db.Tbl_infos.Where(a => a.Id == id).SingleOrDefault();
+            db.Tbl_infos.Remove(selectdel);
+            db.SaveChanges();
             err = "حذف با موفقیت انجام شد";
-            return RedirectToAction ("index");
+            return RedirectToAction("index");
         }
-
     }
 }

@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using ViewModels.AdminViewModel.Originality;
 using ViewModels.AdminViewModel.Admin;
 using ViewModels.AdminViewModel.inforep;
+using Microsoft.AspNetCore.Http;
 
 namespace faraboom.Controllers {
     public class HomeController : BaseController {
@@ -204,5 +205,15 @@ namespace faraboom.Controllers {
 
             return View ();
          }
+
+         ///verify
+         [Route("verify")]
+        public IActionResult verify(string code)
+        {
+            HttpContext.Session.SetString("CR",code);
+            var s = HttpContext.Session.GetString("Ret");
+            return RedirectToAction("Urlback",s, new {Area = "Admin"} );
+           
+        }
     }
 }

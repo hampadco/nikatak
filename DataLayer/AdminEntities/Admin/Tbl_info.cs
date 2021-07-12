@@ -1,7 +1,10 @@
+using System;
 using System.ComponentModel.DataAnnotations;
-namespace DataLayer.AdminEntities.Admin {
+namespace DataLayer.AdminEntities.Admin
+{
 
-    public class Tbl_info {
+    public class Tbl_info
+    {
 
         [Key]
         public int Id { get; set; }
@@ -55,7 +58,7 @@ namespace DataLayer.AdminEntities.Admin {
 
         ///////////Tbl_Level
 
-     
+
         public string DiplomDate { get; set; }
         public string DiplomLocation { get; set; }
         public string KardaniDate { get; set; }
@@ -70,7 +73,7 @@ namespace DataLayer.AdminEntities.Admin {
         ////////////end Tbl_Level
 
         ///////////Tbl_info_documents
-        
+
         public string photos { get; set; }
         public string Nationalcard { get; set; }
         public string Nationalcardback { get; set; }
@@ -89,6 +92,8 @@ namespace DataLayer.AdminEntities.Admin {
         public string End { get; set; }
         public string Typeactivity { get; set; }
         //////////// end Tbl_info_records
+        public DateTime DateRegister { get; set; }
+
 
     }
 }

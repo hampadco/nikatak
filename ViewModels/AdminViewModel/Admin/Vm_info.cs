@@ -2,8 +2,10 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
-namespace ViewModels.AdminViewModel.Admin {
-    public class Vm_info {
+namespace ViewModels.AdminViewModel.Admin
+{
+    public class Vm_info
+    {
         [Key]
         public int Id { get; set; }
         public string UserNameId { get; set; }
@@ -48,8 +50,8 @@ namespace ViewModels.AdminViewModel.Admin {
         public string Gender { get; set; }
         public string maritalstatus { get; set; }
         public string code { get; set; }
-        
-        
+
+
 
         ///////////end info personal
 
@@ -81,7 +83,7 @@ namespace ViewModels.AdminViewModel.Admin {
 
         ///////////Vm_Level
 
-   
+
         public string DiplomDate { get; set; }
         public string DiplomLocation { get; set; }
         public string KardaniDate { get; set; }
@@ -102,8 +104,10 @@ namespace ViewModels.AdminViewModel.Admin {
         public string Typeactivity { get; set; }
         //////////// end Vm_info_records
         public string License1 { get; set; }
-         public string License2 { get; set; }
-          public string License3 { get; set; }
-
+        public string License2 { get; set; }
+        public string License3 { get; set; }
+        public string DateRegister { get; set; }
+        
+        
     }
 }

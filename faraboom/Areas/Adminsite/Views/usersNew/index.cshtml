@@ -1,3 +1,5 @@
+@using faraboom.Models;
+
 <!-- BEGIN: Content-->
 <section id="data-list-view" class="data-list-view-header">
   @if (ViewBag.er != null)
@@ -21,6 +23,7 @@
           <th>استان</th>
           <th>شهر</th>
           <th>کد پستی </th>
+          <th>تاریخ ثبت نام</th>
           <th>عکس کارت ملی</th>
           <th>عکس شناسنامه</th>
           <th>عکس مدرک تحصیلی</th>
@@ -47,6 +50,7 @@
               <td class="product-category">@item.State</td>
               <td class="product-category">@item.City</td>
               <td class="product-category">@item.Postalcode</td>
+              <td class="product-category">@item.DateRegister</td>
               <td class="product-category">
                 <a href="/fileupload/@item.Nationalcard" target="blank">مشاهده</a>
               </td>
@@ -89,3 +93,4 @@
 <!-- add new sidebar ends -->
 </section>
 <!-- Data list view end -->
+
