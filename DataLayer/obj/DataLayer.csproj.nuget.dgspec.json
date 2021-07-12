@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj": {}
+    "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj": {
+    "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj",
+        "projectPath": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\MS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\obj\\",
+        "outputPath": "c:\\Users\\MS\\Desktop\\nika4-15\\Nikatak\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MS\\AppData\\Roaming\\NuGet\\NuGet.Config"

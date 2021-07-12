@@ -19784,3 +19784,15 @@ c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Area
 c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Adminsite\Views\Msg2\index.cshtml.g.cs
 c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Adminsite\Views\Msg2\send.cshtml.g.cs
 c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Adminsite\Views\Shared\_LayoutAdmin2.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Client_Credential\CartToShaba.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Client_Credential\CartToShabaResult.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Client_Credential\EstelamCartResult.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Client_Credential\EstelamShaba.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Client_Credential\EstelamShabaResult.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Client_Credential\Index.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Client_Credential\InputCardNumber.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Gardesh\result.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Gardesh\Urlback.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\MandeHesab\result.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\MandeHesab\Urlback.cshtml.g.cs
+c:\Users\MS\Desktop\nika4-15\Nikatak\faraboom\obj\Debug\netcoreapp3.1\Razor\Views\Home\verify.cshtml.g.cs

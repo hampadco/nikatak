@@ -83,19 +83,26 @@ namespace Admin.Controllers
             return View();
         }
         public IActionResult result(vm_Gardesh Gardesh)
-        {
-            var token = HttpContext.Session.GetString("tokencode");
-
-            var client = new RestClient("https://apibeta.finnotech.ir/oak/v2/clients/nikatak5250/deposits/"+Gardesh.Deposit+"/statement?toDate="+Gardesh.To+"&fromDate="+Gardesh.From+"");
-            client.Timeout = -1;
-            var request = new RestRequest(Method.GET);
-            request.AddHeader("Authorization", "Bearer"+" "+token);
-            request.AddHeader("Cookie", "boomrangid=s%3AUJCk7WO29No6Wvv0ZJ5A7LDv6whfjIWi.B4qNgSlMuXQlqzmeTg0lZ8oIWCunGG8YR8fa%2FKge%2Fw8");
-            var body = @"";
-            request.AddParameter("text/plain", body, ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-            var value2 = JsonConvert.DeserializeObject<Root1>(response.Content);
-            ViewBag.result = value2.Result1.Transactions.ToList();
+        {   try
+                {
+                    var token = HttpContext.Session.GetString("tokencode");
+                    var client = new RestClient("https://apibeta.finnotech.ir/oak/v2/clients/nikatak5250/deposits/"+Gardesh.Deposit+"/statement?toDate="+Gardesh.To+"&fromDate="+Gardesh.From+"");
+                    client.Timeout = -1;
+                    var request = new RestRequest(Method.GET);
+                    request.AddHeader("Authorization", "Bearer"+" "+token);
+                    request.AddHeader("Cookie", "boomrangid=s%3AUJCk7WO29No6Wvv0ZJ5A7LDv6whfjIWi.B4qNgSlMuXQlqzmeTg0lZ8oIWCunGG8YR8fa%2FKge%2Fw8");
+                    var body = @"";
+                    request.AddParameter("text/plain", body, ParameterType.RequestBody);
+                    IRestResponse response = client.Execute(request);
+                    var value2 = JsonConvert.DeserializeObject<Root1>(response.Content);
+                    ViewBag.result = value2.Result1.Transactions.ToList();
+                }
+                catch (System.Exception ex)
+                {
+                      ViewBag.result = null;
+                      
+                }
+           
             return View();
         }
         

@@ -86,22 +86,32 @@ namespace Admin.Controllers
         }
         public IActionResult result(vm_Gardesh Gardesh)
         {
-            
-            var token = HttpContext.Session.GetString("tokencode");
-            var client = new RestClient("https://apibeta.finnotech.ir/oak/v2/clients/nikatak5250/deposits/"+Gardesh.Deposit+"/balance");
-            client.Timeout = -1;
-            var request = new RestRequest(Method.GET);
-            request.AddHeader("Authorization", "Bearer"+" "+token);
-            request.AddHeader("Cookie", "boomrangid=s%3AUJCk7WO29No6Wvv0ZJ5A7LDv6whfjIWi.B4qNgSlMuXQlqzmeTg0lZ8oIWCunGG8YR8fa%2FKge%2Fw8");
-            var body = @"";
-            request.AddParameter("text/plain", body, ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-            var value2 = JsonConvert.DeserializeObject<Root1>(response.Content);
+            try
+            {
+                var token = HttpContext.Session.GetString("tokencode");
+                var client = new RestClient("https://apibeta.finnotech.ir/oak/v2/clients/nikatak5250/deposits/"+Gardesh.Deposit+"/balance");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.GET);
+                request.AddHeader("Authorization", "Bearer"+" "+token);
+                request.AddHeader("Cookie", "boomrangid=s%3AUJCk7WO29No6Wvv0ZJ5A7LDv6whfjIWi.B4qNgSlMuXQlqzmeTg0lZ8oIWCunGG8YR8fa%2FKge%2Fw8");
+                var body = @"";
+                request.AddParameter("text/plain", body, ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request);
+                var value2 = JsonConvert.DeserializeObject<Root1>(response.Content);
 
-            ViewBag.resultAvailableBalance = value2.Result1.AvailableBalance;
-            ViewBag.resultCurrentBalance = value2.Result1.CurrentBalance;
-            ViewBag.resultEffectiveBalance = value2.Result1.EffectiveBalance;
-            ViewBag.resultNumber = value2.Result1.Number;
+                ViewBag.resultAvailableBalance = value2.Result1.AvailableBalance;
+                ViewBag.resultCurrentBalance = value2.Result1.CurrentBalance;
+                ViewBag.resultEffectiveBalance = value2.Result1.EffectiveBalance;
+                ViewBag.resultNumber = value2.Result1.Number;
+            }
+            catch (System.Exception ex)
+            {
+                ViewBag.resultAvailableBalance ="اطلاعاتی از سمت بانک دریافت نشد";
+                ViewBag.resultCurrentBalance ="اطلاعاتی از سمت بانک دریافت نشد";
+                ViewBag.resultEffectiveBalance ="اطلاعاتی از سمت بانک دریافت نشد";
+                ViewBag.resultNumber ="اطلاعاتی از سمت بانک دریافت نشد";
+            }
+            
 
             return View();
 
